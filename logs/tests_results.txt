@@ -1,37 +1,22 @@
-test_average (__main__.TestExercice) ... FAIL
+test_average (__main__.TestExercice) ... ERROR
 test_square (__main__.TestExercice) ... ok
-test_square_root (__main__.TestExercice) ... ERROR
+test_square_root (__main__.TestExercice) ... ok
 test_to_celsius (__main__.TestExercice) ... FAIL
 test_to_degrees (__main__.TestExercice) ... FAIL
 test_to_farenheit (__main__.TestExercice) ... FAIL
 test_to_radians (__main__.TestExercice) ... FAIL
 
 ======================================================================
-ERROR: test_square_root (__main__.TestExercice)
+ERROR: test_average (__main__.TestExercice)
 ----------------------------------------------------------------------
 Traceback (most recent call last):
-  File "test_exercice.py", line 16, in test_square_root
-    output = [exercice.square_root(v) for v in values]
-  File "test_exercice.py", line 16, in <listcomp>
-    output = [exercice.square_root(v) for v in values]
-  File "/home/runner/work/c04-ch3-exercices-Misterh-1/c04-ch3-exercices-Misterh-1/exercice.py", line 8, in square_root
-    a = sqrt(a)
-NameError: name 'sqrt' is not defined
-
-======================================================================
-FAIL: test_average (__main__.TestExercice)
-----------------------------------------------------------------------
-Traceback (most recent call last):
-  File "test_exercice.py", line 50, in test_average
-    'Mauvais calcul de la moyenne'
-AssertionError: Lists differ: [0.0, 0.0, 0.0] != [4.0, 0.0, -2.3333333333333335]
-
-First differing element 0:
-0.0
-4.0
-
-- [0.0, 0.0, 0.0]
-+ [4.0, 0.0, -2.3333333333333335] : Mauvais calcul de la moyenne
+  File "test_exercice.py", line 44, in test_average
+    output = [exercice.average(*v) for v in values]
+  File "test_exercice.py", line 44, in <listcomp>
+    output = [exercice.average(*v) for v in values]
+  File "/home/runner/work/c04-ch3-exercices-Misterh-1/c04-ch3-exercices-Misterh-1/exercice.py", line 18, in average
+    return a, b, c, d
+NameError: name 'd' is not defined
 
 ======================================================================
 FAIL: test_to_celsius (__main__.TestExercice)
@@ -99,4 +84,4 @@ First differing element 0:
 ----------------------------------------------------------------------
 Ran 7 tests in 0.002s
 
-FAILED (failures=5, errors=1)
+FAILED (failures=4, errors=1)
