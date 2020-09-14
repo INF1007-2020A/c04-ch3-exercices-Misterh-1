@@ -28,8 +28,7 @@ def to_radians(angle_degs: float, angle_mins: float, angle_secs: float) -> float
 
 
 def to_degrees(angle_rads: float) -> tuple:
-    rad_deg = (180*angle_rads)/math.pi
-    return round(rad_deg), round(rad_mins), rad_secs
+    return 
 
 
 def to_celsius(temperature: float) -> float:
