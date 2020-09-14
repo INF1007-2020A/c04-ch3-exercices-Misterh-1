@@ -15,8 +15,8 @@ Traceback (most recent call last):
   File "test_exercice.py", line 61, in <listcomp>
     output = [exercice.to_radians(*v) for v in values]
   File "/home/runner/work/c04-ch3-exercices-Misterh-1/c04-ch3-exercices-Misterh-1/exercice.py", line 23, in to_radians
-    degs_rad = angle_degs * math
-TypeError: unsupported operand type(s) for *: 'int' and 'module'
+    print(degs_rad = (angle_degs * math.pi)/180)
+TypeError: 'degs_rad' is an invalid keyword argument for this function
 
 ======================================================================
 FAIL: test_to_celsius (__main__.TestExercice)
