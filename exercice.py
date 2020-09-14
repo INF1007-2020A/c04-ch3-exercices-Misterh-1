@@ -20,7 +20,7 @@ def average(a: float, b: float, c: float) -> float:
 
 
 def to_radians(angle_degs: float, angle_mins: float, angle_secs: float) -> float:
-    degs_rad = angle_degs * pi
+    degs_rad = angle_degs * math
     return 0.0
 
 
