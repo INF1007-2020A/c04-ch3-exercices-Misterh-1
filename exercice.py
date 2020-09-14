@@ -5,7 +5,7 @@
 import math
 
 def square_root(a: float) -> float:
-    a = square_root (a)
+    a = (a)
     return a
 
 
