@@ -40,7 +40,7 @@ def to_celsius(temperature: float) -> float:
 
 
 def to_farenheit(temperature: float) -> float:
-    fa
+    fahr_temp = 
     return 0.0
 
 
