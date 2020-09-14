@@ -15,13 +15,8 @@ Traceback (most recent call last):
   File "test_exercice.py", line 16, in <listcomp>
     output = [exercice.square_root(v) for v in values]
   File "/home/runner/work/c04-ch3-exercices-Misterh-1/c04-ch3-exercices-Misterh-1/exercice.py", line 8, in square_root
-    a = square_root (a)
-  File "/home/runner/work/c04-ch3-exercices-Misterh-1/c04-ch3-exercices-Misterh-1/exercice.py", line 8, in square_root
-    a = square_root (a)
-  File "/home/runner/work/c04-ch3-exercices-Misterh-1/c04-ch3-exercices-Misterh-1/exercice.py", line 8, in square_root
-    a = square_root (a)
-  [Previous line repeated 972 more times]
-RecursionError: maximum recursion depth exceeded
+    a = sqrt (a)
+NameError: name 'sqrt' is not defined
 
 ======================================================================
 FAIL: test_average (__main__.TestExercice)
@@ -117,6 +112,6 @@ First differing element 0:
 + [-0.08668468618238503, 0.17598251810595048, 6.283490739798685, 6.9973449482748] : Mauvais calcul de degres -> radians
 
 ----------------------------------------------------------------------
-Ran 7 tests in 0.007s
+Ran 7 tests in 0.002s
 
 FAILED (failures=6, errors=1)
