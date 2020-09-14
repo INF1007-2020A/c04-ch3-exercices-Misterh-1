@@ -24,8 +24,6 @@ def to_radians(angle_degs: float, angle_mins: float, angle_secs: float) -> float
     min_rad = (angle_mins * math.pi) / (60*180)
     secs_rad = (angle_secs * math.pi) / (3600*180)
     result_rad = degs_rad + min_rad + secs_rad
-    print(degs_rad)
-
     return 0.0
 
 
