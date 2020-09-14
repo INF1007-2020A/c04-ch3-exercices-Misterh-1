@@ -1,10 +1,27 @@
 test_average (__main__.TestExercice) ... FAIL
 test_square (__main__.TestExercice) ... FAIL
-test_square_root (__main__.TestExercice) ... FAIL
+test_square_root (__main__.TestExercice) ... ERROR
 test_to_celsius (__main__.TestExercice) ... FAIL
 test_to_degrees (__main__.TestExercice) ... FAIL
 test_to_farenheit (__main__.TestExercice) ... FAIL
 test_to_radians (__main__.TestExercice) ... FAIL
+
+======================================================================
+ERROR: test_square_root (__main__.TestExercice)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "test_exercice.py", line 16, in test_square_root
+    output = [exercice.square_root(v) for v in values]
+  File "test_exercice.py", line 16, in <listcomp>
+    output = [exercice.square_root(v) for v in values]
+  File "/home/runner/work/c04-ch3-exercices-Misterh-1/c04-ch3-exercices-Misterh-1/exercice.py", line 8, in square_root
+    a = square_root (a)
+  File "/home/runner/work/c04-ch3-exercices-Misterh-1/c04-ch3-exercices-Misterh-1/exercice.py", line 8, in square_root
+    a = square_root (a)
+  File "/home/runner/work/c04-ch3-exercices-Misterh-1/c04-ch3-exercices-Misterh-1/exercice.py", line 8, in square_root
+    a = square_root (a)
+  [Previous line repeated 972 more times]
+RecursionError: maximum recursion depth exceeded
 
 ======================================================================
 FAIL: test_average (__main__.TestExercice)
@@ -35,21 +52,6 @@ First differing element 0:
 
 - [0.0, 0.0, 0.0]
 + [144, 40000, 400] : Mauvais calcul du carré
-
-======================================================================
-FAIL: test_square_root (__main__.TestExercice)
-----------------------------------------------------------------------
-Traceback (most recent call last):
-  File "test_exercice.py", line 22, in test_square_root
-    'Mauvais calcul de la racine carré'
-AssertionError: Lists differ: [0.0, 0.0, 0.0] != [3.4641016151377544, 14.142135623730951, 4.47213595499958]
-
-First differing element 0:
-0.0
-3.4641016151377544
-
-- [0.0, 0.0, 0.0]
-+ [3.4641016151377544, 14.142135623730951, 4.47213595499958] : Mauvais calcul de la racine carré
 
 ======================================================================
 FAIL: test_to_celsius (__main__.TestExercice)
@@ -115,6 +117,6 @@ First differing element 0:
 + [-0.08668468618238503, 0.17598251810595048, 6.283490739798685, 6.9973449482748] : Mauvais calcul de degres -> radians
 
 ----------------------------------------------------------------------
-Ran 7 tests in 0.002s
+Ran 7 tests in 0.006s
 
-FAILED (failures=7)
+FAILED (failures=6, errors=1)
