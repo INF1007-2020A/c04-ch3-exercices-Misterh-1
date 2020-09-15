@@ -2,23 +2,25 @@ test_average (__main__.TestExercice) ... ok
 test_square (__main__.TestExercice) ... ok
 test_square_root (__main__.TestExercice) ... ok
 test_to_celsius (__main__.TestExercice) ... ok
-test_to_degrees (__main__.TestExercice) ... ERROR
+test_to_degrees (__main__.TestExercice) ... FAIL
 test_to_farenheit (__main__.TestExercice) ... ok
 test_to_radians (__main__.TestExercice) ... ok
 
 ======================================================================
-ERROR: test_to_degrees (__main__.TestExercice)
+FAIL: test_to_degrees (__main__.TestExercice)
 ----------------------------------------------------------------------
 Traceback (most recent call last):
-  File "test_exercice.py", line 80, in test_to_degrees
-    output = [exercice.to_degrees(v) for v in values]
-  File "test_exercice.py", line 80, in <listcomp>
-    output = [exercice.to_degrees(v) for v in values]
-  File "/home/runner/work/c04-ch3-exercices-Misterh-1/c04-ch3-exercices-Misterh-1/exercice.py", line 33, in to_degrees
-    return rad_deg, rad, 0.0
-NameError: name 'rad' is not defined
+  File "test_exercice.py", line 86, in test_to_degrees
+    'Mauvais calcul de radians -> degres'
+AssertionError: Lists differ: [(79.[29 chars]118, 0.0), (-278.1960349125718, 48.23790524569[100 chars]0.0)] != [(79.[29 chars]118, 29.612494192724625), (-278.1960349125718,[160 chars]998)]
+
+First differing element 0:
+(79.0980174562859, 5.881047377154118, 0.0)
+(79.0980174562859, 5.881047377154118, 29.612494192724625)
+
+Diff is 848 characters long. Set self.maxDiff to None to see it. : Mauvais calcul de radians -> degres
 
 ----------------------------------------------------------------------
-Ran 7 tests in 0.001s
+Ran 7 tests in 0.003s
 
-FAILED (errors=1)
+FAILED (failures=1)
