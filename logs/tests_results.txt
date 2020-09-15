@@ -12,15 +12,19 @@ FAIL: test_to_degrees (__main__.TestExercice)
 Traceback (most recent call last):
   File "test_exercice.py", line 86, in test_to_degrees
     'Mauvais calcul de radians -> degres'
-AssertionError: Lists differ: [(79.[29 chars]118, 0.0), (-278.1960349125718, 48.23790524569[100 chars]0.0)] != [(79.[29 chars]118, 29.612494192724625), (-278.1960349125718,[160 chars]998)]
+AssertionError: Lists differ: [(114.0, 0.0, 0.0), (-230.0, 0.0, 0.0), (28[29 chars]0.0)] != [(79.0980174562859, 5.881047377154118, 29.6[197 chars]998)]
 
 First differing element 0:
-(79.0980174562859, 5.881047377154118, 0.0)
+(114.0, 0.0, 0.0)
 (79.0980174562859, 5.881047377154118, 29.612494192724625)
 
-Diff is 848 characters long. Set self.maxDiff to None to see it. : Mauvais calcul de radians -> degres
+- [(114.0, 0.0, 0.0), (-230.0, 0.0, 0.0), (286.0, 0.0, 0.0), (234.0, 0.0, 0.0)]
++ [(79.0980174562859, 5.881047377154118, 29.612494192724625),
++  (-278.1960349125718, 48.23790524569176, 0.7750116145507491),
++  (257.74504364071475, -15.297381557114704, 44.031235481811564),
++  (213.95544569810457, -2.673258113725865, 23.057550624127998)] : Mauvais calcul de radians -> degres
 
 ----------------------------------------------------------------------
-Ran 7 tests in 0.003s
+Ran 7 tests in 0.001s
 
 FAILED (failures=1)
