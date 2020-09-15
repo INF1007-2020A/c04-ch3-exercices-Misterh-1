@@ -1,22 +1,10 @@
 test_average (__main__.TestExercice) ... ok
 test_square (__main__.TestExercice) ... ok
 test_square_root (__main__.TestExercice) ... ok
-test_to_celsius (__main__.TestExercice) ... ERROR
+test_to_celsius (__main__.TestExercice) ... ok
 test_to_degrees (__main__.TestExercice) ... FAIL
 test_to_farenheit (__main__.TestExercice) ... ok
 test_to_radians (__main__.TestExercice) ... FAIL
-
-======================================================================
-ERROR: test_to_celsius (__main__.TestExercice)
-----------------------------------------------------------------------
-Traceback (most recent call last):
-  File "test_exercice.py", line 92, in test_to_celsius
-    output = [exercice.to_celsius(v) for v in values]
-  File "test_exercice.py", line 92, in <listcomp>
-    output = [exercice.to_celsius(v) for v in values]
-  File "/home/runner/work/c04-ch3-exercices-Misterh-1/c04-ch3-exercices-Misterh-1/exercice.py", line 36, in to_celsius
-    cels_
-NameError: name 'cels_' is not defined
 
 ======================================================================
 FAIL: test_to_degrees (__main__.TestExercice)
@@ -57,4 +45,4 @@ First differing element 1:
 ----------------------------------------------------------------------
 Ran 7 tests in 0.001s
 
-FAILED (failures=2, errors=1)
+FAILED (failures=2)
