@@ -14,8 +14,8 @@ Traceback (most recent call last):
     output = [exercice.to_degrees(v) for v in values]
   File "test_exercice.py", line 80, in <listcomp>
     output = [exercice.to_degrees(v) for v in values]
-  File "/home/runner/work/c04-ch3-exercices-Misterh-1/c04-ch3-exercices-Misterh-1/exercice.py", line 32, in to_degrees
-    rad
+  File "/home/runner/work/c04-ch3-exercices-Misterh-1/c04-ch3-exercices-Misterh-1/exercice.py", line 33, in to_degrees
+    return rad_deg, rad, 0.0
 NameError: name 'rad' is not defined
 
 ----------------------------------------------------------------------
